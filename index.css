@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  /* border: 1px solid pink; */
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Set core body defaults */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #333;
+  background-color: #ebebeb;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  border: 1px solid #777;
+  border-radius: 25px 25px 20px 20px;
+  box-shadow: 0px 10px 15px 5px rgba(0,0,0,0.2);
+}
+
+.header {
+  letter-spacing: 1.5px;
+  background-color: #4e00b3;
+  color: #fff;
+  text-align: center;
+  padding: 1.1em 1em;
+  margin-bottom: 0.675em;
+  border-radius: 20px 20px 0 0;
+  border: 1px solid #4e00b3;
+  z-index: 2;
+}
+
+.instructions {
+  padding: 1em 1.5em;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.question {
+  padding: 1em 1.5em;
+}
+
+.question input {
+  margin: 0.5em 0 0.5em 1.5em;
+}
+
+label {
+  margin-left: 0.5em;
+}
+
+.question p {
+  margin-bottom: 0.5em;
+}
+
+.button {
+  font-family: inherit;
+  font-size: 1.8rem;
+  color: #fff;
+  background-color: #008000;
+  padding: 1em;
+  margin: 1.5em;
+  width: 80%;
+  align-self: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  transform: background-color 250ms;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #006600; 
+}
+
+#yourColors {
+  display: none;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 65%, rgba(249,249,249,1) 100%);
+}
+
+h3 {
+  font-size: 2rem;
+  padding: 0.25em 1.25em 0.75em 1.25em;
+}
+
+#results {
+  margin-bottom: 1em;
+}
+
+#results p {
+  font-size: 2.1rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 0.5em;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 2em 1em 2em;
+  margin: 0 auto;
+}
+
+@media (min-width: 760px) {
+  html {
+    font-size: 11px;
+  }
+
+  .container {
+    margin: 2em;
+    max-width: 780px;
+  }
+
+  .header {
+    margin-bottom: 1em;
+  }
+
+  .instructions {
+    padding: 1.25em 4em 0.5em 4em;
+  }
+
+  .question {
+    padding: 1.25em 4.5em;
+  }
+
+  .button {
+    margin-bottom: 2em;
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  h3 {
+    padding: 0.75em 2em 0.75em 2em;
+  }
+
+  #results p {
+    margin-top: 0.75em;
+  }
+
+  #results {
+    margin-bottom: 1.5em;
+  }
+
+  img {
+    width: 70%;
+  }
+
+}

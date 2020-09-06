@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel="stylesheet">
+  <script src="index.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Wonder Wenc</title>
+</head>
+<body>
+  <div class="container" id="questions">
+    <h2 class="header">Would You Rather?</h2>
+    <p class="instructions">Please choose one response for each question asked.</p>
+    <div class="question">
+      <p>Would you rather be able to breathe underwater or fly?</p>
+
+      <input type="radio" name="superpower" value="red" />
+      <label>Breath underwater</label>
+      <br />
+      <input type="radio" name="superpower" value="blue" />
+      <label>Fly</label>
+    </div>
+
+    <div class="question">
+      <p>Would you rather ride a bike or ride a horse?</p>
+
+      <input type="radio" name="ride" value="black" />
+      <label>Ride a bike</label>
+      <br />
+      <input type="radio" name="ride" value="violet" />
+      <label>Ride a horse</label>
+    </div>
+
+    <div class="question">
+      <p>Would you rather be able to speak every language or play every instrument?</p>
+
+      <input type="radio" name="know-all" value="brown" />
+      <label>Speak every language</label>
+      <br />
+      <input type="radio" name="know-all" value="orange" />
+      <label>Play every instrument</label>
+    </div>
+
+    <div class="question">
+      <p>Would you rather be able to go to the zoo or go to the aquarium?</p>
+
+      <input type="radio" name="go-to" value="red orange" />
+      <label>Go to the zoo</label>
+      <br />
+      <input type="radio" name="go-to" value="green" />
+      <label>Go to the aquarium</label>
+    </div>
+
+    <div class="question">
+      <p>Would you rather have a pet hippo or a pet penguin?</p>
+
+      <input type="radio" name="pet" value="sky blue" />
+      <label>Pet hippo</label>
+      <br />
+      <input type="radio" name="pet" value="yellow green" />
+      <label>Pet penguin</label>
+    </div>
+
+    <div class="question">
+      <p>Would you rather have cake or french fries?</p>
+
+      <input type="radio" name="food" value="yellow" />
+      <label>Cake</label>
+      <br />
+      <input type="radio" name="food" value="white" />
+      <label>French fries</label>
+    </div>
+
+    <button class="button" type="button">Submit</button>
+  </div>
+
+  <div class="container" id="yourColors"> 
+    <h2 class="header">Your Palette</h2>
+    <h3>Based on your answers, here are the colors your will use in your abstract artwork. Write these six colors down before you close this browser window.</h3>
+    <div id="results">
+    </div>
+    <img src="img/colored_pencils.jpg" alt="colored pencils" />
+  </div>
+  
+</body>
+</html>
