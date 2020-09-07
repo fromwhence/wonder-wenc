@@ -1,0 +1,77 @@
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 2.4em;
+  margin: 0.5em 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide browser's default radio btn */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Creates custom radio btn */
+.radio-custom {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  height: 20px;
+  width: 20px;
+  background-color: #ebebeb;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+}
+
+.radio-container:hover input ~ .radio-custom {
+  background-color: #dfdfdf;
+}
+
+.radio-container input:checked ~ .radio-custom {
+  background-color: #4e00b3;
+  border: 1px solid #4e00b3
+}
+
+/* Createa dot/circle indicatior. Hidden when not clicked) */
+.radio-custom:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Shows dot/circle when radio is checked */
+.radio-container input:checked ~ .radio-custom:after {
+  display: block;
+
+}
+
+.radio-container .radio-custom:after {
+  top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+  background-color: rgba(255,255,255,0.9);
+}
+
+@media (min-width: 760px) {
+  .radio-container {
+    padding-left: 2.6em;
+  }
+
+  .radio-custom {
+    top: 3px;
+    left: 10px;
+  }
+}
+
+
+
+
+
