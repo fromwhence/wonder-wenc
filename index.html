@@ -1,119 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" description="Art project questionnaire">
-  <link href="./css/index.css" rel="stylesheet">
-  <link href="./css/radio.css" rel="stylesheet">
-  <script src="index.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <title>Wonder Wenc</title>
-</head>
-<body>
-  <div class="container" id="questions">
-    <h2 class="header">Would You Rather?</h2>
-    <p class="instructions">Please choose one response for each question asked.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" description="Art project questionnaire" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/radio.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Wonder Wenc 2</title>
+  </head>
+  <body>
+    <div class="container" id="questions">
+      <h2 class="header">Fourth Grade Favorites</h2>
+      <p class="instructions">
+        Please choose one response for each question asked.
+      </p>
 
-    <div class="question">
-      <p>Would you rather be able to breathe underwater or fly?</p>
+      <div class="question">
+        <p>What was your favorite book to read as a class?</p>
 
-      <label class="radio-container">Breath underwater
-        <input type="radio" name="superpower" value="red" />
-        <span class="radio-custom"></span>
-      </label>
+        <label class="radio-container"
+          >Home of the Brave
+          <input type="radio" name="reading" value="red" />
+          <span class="radio-custom"></span>
+        </label>
 
-      <label class="radio-container">Fly
-        <input type="radio" name="superpower" value="blue" />
-        <span class="radio-custom"></span>
-      </label>
+        <label class="radio-container"
+          >Number the Stars
+          <input type="radio" name="reading" value="light blue" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
 
+      <div class="question">
+        <p>What were your favorite math studies?</p>
+
+        <label class="radio-container"
+          >Area &amp; Perimeter / Geometry
+          <input type="radio" name="math" value="black" />
+          <span class="radio-custom"></span>
+        </label>
+
+        <label class="radio-container"
+          >Fractions &amp; Decimals
+          <input type="radio" name="math" value="violet" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
+
+      <div class="question">
+        <p>What were your favorite movement break locations?</p>
+
+        <label class="radio-container"
+          >Gym / Clubroom
+          <input type="radio" name="movement" value="brown" />
+          <span class="radio-custom"></span>
+        </label>
+
+        <label class="radio-container"
+          >Courtyard / Auditorium
+          <input type="radio" name="movement" value="green" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
+
+      <div class="question">
+        <p>What was your favorite SS unit?</p>
+
+        <label class="radio-container"
+          >Regions in America
+          <input type="radio" name="SS" value="red orange" />
+          <span class="radio-custom"></span>
+        </label>
+
+        <label class="radio-container"
+          >American Revolution
+          <input type="radio" name="SS" value="orange" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
+
+      <div class="question">
+        <p>What was your favorite art medium?</p>
+
+        <label class="radio-container"
+          >Drawing
+          <input type="radio" name="art" value="dark blue" />
+          <span class="radio-custom"></span>
+        </label>
+
+        <label class="radio-container"
+          >Painting
+          <input type="radio" name="art" value="yellow" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
+
+      <div class="question">
+        <p>Which Science project did you enjoy more?</p>
+
+        <label class="radio-container"
+          >Rube Goldberg Machines
+          <input type="radio" name="science" value="yellow green" />
+          <span class="radio-custom"></span>
+        </label>
+
+        <label class="radio-container"
+          >Animal Research
+          <input type="radio" name="science" value="white" />
+          <span class="radio-custom"></span>
+        </label>
+      </div>
+
+      <button class="button" type="button">Submit</button>
     </div>
 
-    <div class="question">
-      <p>Would you rather ride a bike or ride a horse?</p>
-
-      <label class="radio-container">Ride a bike
-        <input type="radio" name="ride" value="black" />
-        <span class="radio-custom"></span>
-      </label>
-
-      <label class="radio-container">Ride a horse
-        <input type="radio" name="ride" value="violet" />
-        <span class="radio-custom"></span>
-     </label>
-
+    <div class="container" id="yourColors">
+      <h2 class="header">Your Palette</h2>
+      <h3>
+        Based on your answers, here are the colors your will use in your
+        abstract artwork. Write these six colors down before you close this
+        browser window.
+      </h3>
+      <div id="results"></div>
+      <img src="img/colored_pencils.jpg" alt="colored pencils" />
     </div>
-
-    <div class="question">
-      <p>Would you rather be able to speak every language or play every instrument?</p>
-
-      <label class="radio-container">Speak every language
-        <input type="radio" name="know-all" value="brown" />
-        <span class="radio-custom"></span>
-      </label>
-
-      <label class="radio-container">Play every instrument
-        <input type="radio" name="know-all" value="orange" />
-        <span class="radio-custom"></span>
-      </label>
-
-    </div>
-
-    <div class="question">
-      <p>Would you rather be able to go to the zoo or go to the aquarium?</p>
-
-      <label class="radio-container">Go to the zoo
-        <input type="radio" name="go-to" value="red orange" />
-        <span class="radio-custom"></span>
-      </label>
-
-      <label class="radio-container">Go to the aquarium
-        <input type="radio" name="go-to" value="green" />
-        <span class="radio-custom"></span>
-      </label>
-    </div>
-
-    <div class="question">
-      <p>Would you rather have a pet hippo or a pet penguin?</p>
-
-      <label class="radio-container">Pet hippo
-        <input type="radio" name="pet" value="sky blue" />
-        <span class="radio-custom"></span>
-      </label>
-
-      <label class="radio-container">Pet penguin
-        <input type="radio" name="pet" value="yellow green" />
-        <span class="radio-custom"></span>
-      </label>
-
-    </div>
-
-    <div class="question">
-      <p>Would you rather have cake or french fries?</p>
-
-      <label class="radio-container">Cake
-        <input type="radio" name="food" value="yellow" />
-        <span class="radio-custom"></span>
-      </label>
-
-      <label class="radio-container">French fries
-        <input type="radio" name="food" value="white" />
-        <span class="radio-custom"></span>
-      </label>
-
-    </div>
-
-    <button class="button" type="button">Submit</button>
-  </div>
-
-  <div class="container" id="yourColors"> 
-    <h2 class="header">Your Palette</h2>
-    <h3>Based on your answers, here are the colors your will use in your abstract artwork. Write these six colors down before you close this browser window.</h3>
-    <div id="results">
-    </div>
-    <img src="img/colored_pencils.jpg" alt="colored pencils" />
-  </div>
-  
-</body>
+  </body>
 </html>
